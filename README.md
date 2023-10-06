@@ -31,6 +31,7 @@ pip install cssutils
 pip install numba
 pip install torch-tools
 pip install visdom
+pip install pygame
 python setup.py install
 ```
 # Install using poetry
