@@ -21,7 +21,7 @@ if(DIFFVG_CUDA)
     if(NOT WIN32)
         # Hack: for some reason the line above doesn't work on some Linux systems.
         set(CUDA_NVCC_FLAGS "${CUDA_NVCC_FLAGS} -std=c++11")
-        set(CUDA_NVCC_FLAGS_DEBUG "-g -G")
+        #set(CUDA_NVCC_FLAGS_DEBUG "-g -G")
     endif()
 else()
     message(STATUS "Build without CUDA support")
