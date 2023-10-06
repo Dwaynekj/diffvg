@@ -18,12 +18,13 @@ diffvg is a differentiable rasterizer for 2D vector graphics. See the webpage fo
 
 # Install
 ```
+conda create -n diffvg python=3.9 #no 3.7 available
 git submodule update --init --recursive
-conda install -y pytorch torchvision -c pytorch
-conda install -y numpy
-conda install -y scikit-image
-conda install -y -c anaconda cmake
-conda install -y -c conda-forge ffmpeg
+conda install -n diffvg -y pytorch torchvision -c pytorch
+conda install -n diffvg -y numpy
+conda install -n diffvg -y scikit-image
+conda install -n diffvg -y -c anaconda cmake
+conda install -n diffvg -y -c conda-forge ffmpeg
 pip install svgwrite
 pip install svgpathtools
 pip install cssutils
